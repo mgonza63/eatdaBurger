@@ -34,7 +34,6 @@ const orm = {
       connection.query(queryStatement, vals, (err, result) => {
         if (err) throw err;
         console.log("Sucesfully Updated");
-        console.log("Executing Third Declared CallBack");
         callback(result);
       });
   
