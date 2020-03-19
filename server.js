@@ -4,19 +4,6 @@ var express = require("express");
 
 var handlebars = require("express-handlebars");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-
-  // Your port; if not 3306
-  port: 3306,
-
-  // Your username
-  user: "root",
-
-  // Your password
-  password: "",
-  database: "ice_creamDB"
-});
 
 connection.connect(function(err) {
   if (err) throw err;
