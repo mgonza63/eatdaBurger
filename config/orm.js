@@ -27,7 +27,7 @@ const orm = {
   
     },
   
-    updateOne : (tableName, cols, vals, condition, callback) =>{
+    updateOne : (tableName, cols, vals, condition, callback) => {
   
       let queryStatement = `UPDATE ${tableName} SET ${cols.toString()} = ? WHERE ${condition}`;
   
