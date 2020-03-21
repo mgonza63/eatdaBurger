@@ -21,7 +21,7 @@ const orm = {
   
       connection.query(queryStatement, vals, (err, result) => {
         if (err) throw err;
-        console.log("Sucesfully Added");
+
         callback(result);
       });
   
@@ -33,7 +33,7 @@ const orm = {
   
       connection.query(queryStatement, vals, (err, result) => {
         if (err) throw err;
-        console.log("Sucesfully Updated");
+
         callback(result);
       });
   
