@@ -8,11 +8,11 @@ var burger = require('../models/burger.js');
 
 router.get('/', function (req, res) 
 {
-  res.redirect('/index');
+  res.redirect('/');
 });
 
 
-router.get('/index', function (req, res) 
+router.get('/', function (req, res) 
 {
   burger.selectAll(function(data) 
   {
@@ -36,7 +36,7 @@ router.post('/burger/eat/:id', function (req, res)
 {
   burger.updateOne(req.params.id, function() 
   {
-    res.redirect('/index');
+    res.redirect('/');
   });
 });
 
